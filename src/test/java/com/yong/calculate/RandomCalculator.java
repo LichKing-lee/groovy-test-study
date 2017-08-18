@@ -12,6 +12,6 @@ public class RandomCalculator {
     }
 
     public int plus(int... targets){
-        return this.calculator.plus(targets) + random.nextInt(4);
+        return this.calculator.plus(targets) + random.nextInt();
     }
 }
