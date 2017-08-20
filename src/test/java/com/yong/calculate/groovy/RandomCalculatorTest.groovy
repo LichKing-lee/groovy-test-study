@@ -19,23 +19,6 @@ class RandomCalculatorTest {
     }
 
     @Test
-    void plus_mockito(){
-        // given
-        def mock = new MockFor(Random)
-        mock.demand.nextInt{ 3 }
-        mock.use {
-            def calculator = new RandomCalculator(new Random(), new Calculator())
-
-            // when
-            def result = calculator.plus(2, 5)
-
-            // then
-            assert result == 10
-        }
-        mock.expect.verify()
-    }
-
-    @Test
     void groovy_mocking_test(){
         // given
         def mock = new MockFor(Random)
